@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- © 2019 marcel Savegnago - ID42 Sistemas
+     © 2019 João Paulo Carassato - ID42 sistemas
+     License AGPL-3.0 or later (http://www.gnu.org/licenses/agpl). -->
+<odoo>
+    <data>
+
+        <!-- ************************************************************* -->
+        <!-- Fiscal Position Templates -->
+        <!-- ************************************************************* -->
+
+        <record id="fp_nacional" model="account.fiscal.position.template">
+            <field name="name">Venda Normal</field>
+            <field name="chart_template_id" ref="account_chart_template_full"/>
+        </record>
+
+        <record id="fp_intra" model="account.fiscal.position.template">
+            <field name="name">Venda Consumidor Final</field>
+            <field name="chart_template_id" ref="account_chart_template_full"/>
+        </record>
+
+        <!-- ************************************************************* -->
+        <!-- Fiscal Position Tax Templates -->
+        <!-- ************************************************************* -->
+
+        <!-- Extracomunitarios -->
+        <!--
+        <record id="fptt_extra_4b" model="account.fiscal.position.tax.template">
+            <field name="position_id" ref="fp_nacional"/>
+            <field name="tax_src_id" ref="tax_template_out_ipi"/>
+            <field name="tax_dest_id" ref="tax_template_out_ipi"/>
+        </record>
+        -->
+       
+        <!-- Intracomunitarios -->
+        <!--
+        <record id="fptt_intra_4b" model="account.fiscal.position.tax.template">
+            <field name="position_id" ref="fp_intra"/>
+            <field name="tax_src_id" ref="tax_template_out_ipi"/>
+            <field name="tax_dest_id" ref="tax_template_out_ipi"/>
+        </record>
+        -->
+    </data>
+</odoo>
