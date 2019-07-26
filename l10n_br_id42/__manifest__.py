@@ -24,14 +24,14 @@
     'version': '12.0.1.0.0',
 
     'depends': [
-        'account',
+        'account', 'br_account'
     ],
     'data': [
         'data/account_chart_template_data.xml',
         'data/account_group.xml',        
         'data/account.account.template.csv',
         'data/account_fiscal_position_template_data.xml',
-        'data/account_date.xml',
+        #'data/account_date.xml',
         'data/account_tax_data.xml',
         #'data/account_chart_template_configure_data.xml',
         'data/account_chart_template_account_account_link.xml',
