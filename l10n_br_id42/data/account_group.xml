@@ -48,6 +48,11 @@
     </record>
     <record id="account_group_1010107" model="account.group">
         <field name="code_prefix">1.01.01.07</field>
+        <field name="name">TRANSFERENCIAS</field>
+        <field name="parent_id" ref="account_group_10101"/>
+    </record>
+    <record id="account_group_1010108" model="account.group">
+        <field name="code_prefix">1.01.01.08</field>
         <field name="name">VALORES MOBILIÁRIOS - APLICAÇÕES DE OUTROS RECURSOS SUJEITOS A RESTRIÇÕES</field>
         <field name="parent_id" ref="account_group_10101"/>
     </record>
